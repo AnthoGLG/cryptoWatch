@@ -1,0 +1,9 @@
+b73abca1216b7d84bdace50e4e4f5101
+
+https://api.nomics.com/v1/currencies/ticker
+?
+key=b73abca1216b7d84bdace50e4e4f5101
+&
+ids=BTC,ETH,AAVE
+&
+interval=1d,30d,365d
