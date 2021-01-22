@@ -11,7 +11,7 @@ export default function Home({ res }) {
             key={index}
             className="relative hover:shadow-md p-8 border border-blue-300 rounded-3xl bg-blue-100 md:w-auto flex-1 mx-5"
           >
-            <Link href="/">
+            <Link href={`/${crypto.id}`}>
               <a className="rounded-md">
                 <div className="text-center">
                   <img
@@ -59,9 +59,9 @@ export default function Home({ res }) {
                   <p>
                     1 an :{" "}
                     <span className="font-bold">
-                      {parseFloat(crypto["365d"].price_change_pct * 100).toFixed(
-                        2
-                      ) + "%"}
+                      {parseFloat(
+                        crypto["365d"].price_change_pct * 100
+                      ).toFixed(2) + "%"}
                     </span>
                     {crypto["365d"].price_change_pct < 0 ? (
                       <span className="text-red-500"> &#x2798;</span>
@@ -69,7 +69,6 @@ export default function Home({ res }) {
                       <span className="text-green-500"> &#x279A;</span>
                     )}
                   </p>
-
                 </div>
               </a>
             </Link>
